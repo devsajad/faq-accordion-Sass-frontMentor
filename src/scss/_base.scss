@@ -1,0 +1,93 @@
+// Color variables
+$color-text-dark-blue: hsl(238, 29%, 16%);
+$color-text-soft-rec: hsl(14, 88%, 65%);
+
+$color-gradient-violet: rgba(175, 103, 233, 1);
+$color-gradient-blue: rgba(101, 101, 231, 1);
+
+$color-text-gray-very-dark: hsl(237, 12%, 33%);
+$color-text-gray-dark: hsl(240, 6%, 50%);
+
+$color-divider-gray-light: hsl(240, 5%, 91%);
+
+// Font size Variables
+$font-wight-normal: 400;
+$font-wight-bold: 700;
+
+@mixin transition-normal {
+  transition: all 0.3s;
+}
+
+@mixin media-general {
+  @media screen and (max-width: 63em) {
+    @content;
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Kumbh Sans", serif;
+  font-weight: $font-wight-normal;
+  color: $color-text-gray-dark;
+  line-height: 1;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+      0deg,
+      $color-gradient-blue 0%,
+      $color-gradient-violet 100%
+    )
+    no-repeat center center fixed;
+}
+
+.container {
+  border-radius: 2rem;
+  background-color: #fff;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+
+  width: 92rem;
+  height: 50rem;
+
+  background: url("../../assets/images/bg-pattern-desktop.svg"), white;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: -400px -224px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: $font-wight-bold;
+}
+
+// a {
+//   //   color: $color-grey-light-1;
+//   text-decoration: none;
+//   &:hover {
+//     // color: $color-primary;
+//   }
+//   @include transition-normal;
+// }
+
+li {
+  list-style: none;
+}

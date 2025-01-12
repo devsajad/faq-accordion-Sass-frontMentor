@@ -1,0 +1,83 @@
+html {
+  font-size: 55%;
+}
+
+.container {
+  @include media-general {
+    grid-template-columns: 1fr;
+    width: 32.7rem;
+    position: relative;
+
+    height: 54rem;
+    width: 327px;
+
+    background: url("../../assets/images/bg-pattern-mobile.svg"), white;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 39.5px -6px;
+  }
+}
+
+.faq {
+  @include media-general {
+    align-items: center;
+    margin-top: 14rem;
+  }
+  height: 38.5rem;
+
+  &__header h1 {
+  }
+
+  &__list {
+    @include media-general {
+      padding: 1rem 2rem;
+    }
+
+    height: 100%;
+  }
+
+  .faq__item {
+    .faq__content {
+      .faq__header {
+      }
+
+      .faq__answer {
+        @include transition-normal;
+        line-height: 1.5;
+
+        &.open {
+          max-height: 7rem; // Transition from 0 to 7rem
+          padding-bottom: 1.6rem;
+        }
+      }
+
+      .faq__question {
+        padding: 2rem 0;
+      }
+    }
+  }
+}
+
+.image {
+  &__woman,
+  &__box {
+    @include media-general {
+      display: none;
+    }
+  }
+
+  &__woman-container {
+    @include media-general {
+      overflow: visible;
+    }
+    .image__woman-mobile {
+      @include media-general {
+        width: 28rem;
+        display: block;
+        position: absolute;
+        right: 50%;
+        transform: translate(50%, -13.2rem);
+      }
+    }
+  }
+}

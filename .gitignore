@@ -1,0 +1,15 @@
+*.xd
+*.fig
+
+.DS_Store
+
+.prettierignore
+
+.parcel-cache/
+dist/
+
+README-template.md
+style-guide.md
+.sassrc
+
+node_modules/
