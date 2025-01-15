@@ -64,8 +64,8 @@ body {
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
 
-  width: 92rem;
-  height: 50rem;
+  width: 97rem;
+  height: 55rem;
 
   background: url("../../assets/images/bg-pattern-desktop.svg"), white;
   background-repeat: no-repeat;
@@ -79,6 +79,13 @@ h3 {
   font-weight: $font-wight-bold;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 // a {
 //   //   color: $color-grey-light-1;
 //   text-decoration: none;
